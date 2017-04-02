@@ -1,0 +1,16 @@
+{
+  "page": {
+    "league-table": "League Table",
+    "calendar": "Matchdays"
+  },
+  "league-table": {
+    "position": "Pos.",
+    "team": "Team",
+    "points": "Pts",
+    "played": "D.",
+    "win": "W.",
+    "draw": "D.",
+    "loss": "L.",
+    "diff": "Diff."
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../styles.scss';
+
+.container {
+    display: flex;
+
+    height: $headerHeight;
+    background-color: $mainColor;
+
+    border-bottom: 1px solid #ccc;
+    box-shadow: 2px 3px 3px 0px #ccc;
+
+    .flags-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+
+        img {
+            cursor: pointer;
+            max-height: 30px;
+            margin: 10px;
+            padding:0;
+
+            background-color: transparent;
+        }
+    }
+    
+}

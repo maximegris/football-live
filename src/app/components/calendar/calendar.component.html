@@ -1,0 +1,16 @@
+<p class="current-matchday">
+  Journée en cours : {{apiFootBallService.getCurrentMatchDay()}}
+</p>
+
+<div class="card-container">
+  <md-card *ngFor="let match of matchdays[apiFootBallService.getCurrentMatchDay()]" class="match-card">
+    <div class="home-team">{{match.homeTeamName}}</div>
+    <div class="result-block">
+      <div>
+        <span>{{match.result.goalsHomeTeam ? match.result.goalsHomeTeam : 0 }}</span> - <span>{{match.result.goalsAwayTeam ? match.result.goalsAwayTeam : 0 }}</span>
+      </div>  
+      <div>{{ match.status === 'FINISHED' ? 'Fini': match.status === 'TIMED' ? 'En cours' : 'A venir' }}</div>
+    </div>
+    <div class="away-team">{{match.awayTeamName}}</div>
+  </md-card>
+</div>

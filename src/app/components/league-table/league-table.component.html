@@ -1,0 +1,29 @@
+<div class="container">
+	<table class="league-table">
+		<thead class="league-table-header">
+		<tr class="league-table-row">
+			<th class="position">{{ 'league-table.position' | translate}}</th>
+			<th class="logo-name" colspan="2">{{ 'league-table.team' | translate}}</th>
+			<th class="points">{{ 'league-table.points' | translate}}</th>
+			<th class="matchplayed">{{ 'league-table.played' | translate}}</th>
+			<th class="wins">{{ 'league-table.win' | translate}}</th>
+			<th class="draws">{{ 'league-table.draw' | translate}}</th>
+			<th class="looses">{{ 'league-table.loss' | translate}}</th>
+			<th class="diff">{{ 'league-table.diff' | translate}}</th>
+		</tr>
+		</thead>
+		<tbody class="league-table-body">
+		<tr *ngFor="let team of league.standing" class="league-table-row">
+			<td class="position">{{team.position}}</td>
+			<td class="logo"><img [src]="team.crestURI"></td>
+			<td class="name">{{team.teamName}}</td>
+			<td class="points">{{team.points}}</td>
+			<td class="matchplayed">{{team.playedGames}}</td>
+			<td class="wins">{{team.wins}}</td>
+			<td class="draws">{{team.draws}}</td>
+			<td class="looses">{{team.losses}}</td>
+			<td class="diff" [ngClass]="{'positive': team.goalDifference > 0, 'negative':  team.goalDifference < 0}">{{team.goalDifference}}</td>
+		</tr>
+		</tbody>
+	</table>
+</div>

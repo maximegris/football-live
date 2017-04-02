@@ -1,0 +1,42 @@
+.current-matchday {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    .match-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 350px;
+        height: 70px;
+
+        margin: 20px;
+        padding: 15px 10px;
+
+        .home-team {
+            width: 150px;
+            text-align: right;
+        }
+
+        .result-block {
+            width: 100px;
+            margin: 10px;
+
+            > div {
+                text-align: center;
+            }
+        }
+
+        .away-team {
+            width: 150px;
+        }
+    }
+}

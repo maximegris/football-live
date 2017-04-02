@@ -1,0 +1,16 @@
+{
+  "page": {
+    "league-table": "Classement",
+    "calendar": "Calendrier"
+  },
+  "league-table": {
+    "position": "Pos.",
+    "team": "Equipe",
+    "points": "Pts",
+    "played": "J.",
+    "win": "G.",
+    "draw": "N.",
+    "loss": "P.",
+    "diff": "Diff."
+  }
+}

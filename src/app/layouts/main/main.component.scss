@@ -1,0 +1,20 @@
+@import '../../../styles.scss';
+
+.container-fluid {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .buttons-container {
+        margin: 10px 0;
+
+        button {
+            height: 50px;
+            width: 120px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+    }
+}
